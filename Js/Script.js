@@ -13,16 +13,3 @@
       
 
 
-
-// Providing an extra textbox when user selects other documents 
-  var select = document.getElementById("identity");
-  var otherIdentity = document.getElementById("otherIdentity");
-
-  select.addEventListener("change", function() {
-    if (select.value === "other") {
-      otherIdentity.style.display = "block";
-    } else {
-      otherIdentity.style.display = "none";
-    }
-  });
-

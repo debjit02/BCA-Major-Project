@@ -16,13 +16,12 @@ if ($_SERVER['REQUEST_METHOD']) {
     $pass = $_POST['password'];
     $phone = $_POST['phone'];
     $gender = $_POST['gender'];
-    $bio = $_POST['bio'];
-
+    $address = $_POST['address'];
 
 
 
     //sql query to insert data into database
-    $sql = "INSERT INTO registration (firstname,lastname,email,pass,phone,gender,bio) VALUES('$firstname','$lastname','$email','$pass','$phone','$gender','$bio')";
+    $sql = "INSERT INTO registration (firstname,lastname,email,pass,phone,gender,habitat) VALUES('$firstname','$lastname','$email','$pass','$phone','$gender','$address')";
     $result = mysqli_query($conn, $sql);
     if(!$result)
     {

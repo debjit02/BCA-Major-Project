@@ -52,6 +52,7 @@ body {
     font-weight: bold;
 }
 
+
 .form-body .form-input {
     font-size: 17px;
     box-sizing: border-box;
@@ -125,6 +126,22 @@ input[type="file"] {
     border-radius: 5px;
     color: #bcf5e7;
     cursor: pointer;
+}
+.form-footer button a
+{
+    text-decoration: none;
+    display: inline-block;
+    /* background-color: #1bba93; */
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    color: #bcf5e7;
+    cursor: pointer;
+}
+.form-footer button a:hover
+{
+    background-color: #169c7b;
+    color: white;
 }
 
 .btn:hover {
