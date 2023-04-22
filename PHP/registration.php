@@ -17,6 +17,7 @@ if ($_SERVER['REQUEST_METHOD']) {
     $phone = $_POST['phone'];
     $gender = $_POST['gender'];
     $address = $_POST['address'];
+    // $hashed_password = password_hash($pass,PASSWORD_DEFAULT);
 
 
 
@@ -28,7 +29,9 @@ if ($_SERVER['REQUEST_METHOD']) {
         var_dump($result);
     }
     else
-    echo "Data inserted successfully";
+    header('Location: ../Internal/home.html');
+    exit;
+    
 
     
 }
