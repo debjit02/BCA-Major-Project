@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD']) {
             exit;
         } else {
             // Login failed, show an error message
-            echo 'Invalid password.';
+            echo "<script>alert </script>";
         }
     } else {
         // Login failed, show an error message
