@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +17,11 @@
 </head>
 
 <body>
-    <form action="../PHP/login.php" class="signup-form" method="post">
+<?php 
+if($_SESSION){
+  session_destroy();
+ } ?>
+    <form action="../PHP/operation.php" class="signup-form" method="post">
         <div class="form-header">
             <a href="#">
                 <h1>E-Clinic</h1>
@@ -29,8 +39,8 @@
                     required="required" />
 
                 <div class="form-footer">
-                    <input type="submit" value="Login" class="btn" name="login">
-                    <button class="btn" style="float: left;"><a href="../Index.html">Sign up</a></button>
+                    <button type="submit" value="Login" class="btn" name="action"> Log In</button>
+                    <button class="btn" style="float: left;"><a href="../index.html">Sign up</a></button>
 
                 </div>
             </div>

@@ -6,17 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="./CSS/style.css">
   <script src="Js/Script.js"></script>
 </head>
 
 <body>
-  <form class="signup-form" action="PHP/registration.php" id="registration-form" method="post" enctype="multipart/form-data" >
+  <form class="signup-form" action="./PHP/operation.php" id="registration-form" method="post"
+    enctype="multipart/form-data">
     <!-- form header -->
     <div class="form-header">
       <a href="#">
         <h1>E-Clinic</h1>
       </a>
+      
     </div>
 
 
@@ -96,8 +98,8 @@
 
     <!-- form-footer -->
     <div class="form-footer">
-      <button class="btn" style="float: left;"> <a href="Internal/login.html">Login</a></button>
-      <input type="submit" class="btn" value="Sign up" name="signup"></input>
+      <button class="btn" style="float: left;"> <a href="./Internal/login.php">Login</a></button>
+      <input type="submit" class="btn" value="Signup" name="action"></input>
     </div>
   </form>
 

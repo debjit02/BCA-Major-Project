@@ -1,11 +1,31 @@
 <?php
-//Checking the connection
-include "database_connection.php";
-//creating database if not exists
-include "database_creation.php";
 
-//fetching data from the html form in registration.html file
-if ($_SERVER['REQUEST_METHOD']) {
+require('database_connection.php');
+session_start();
+// include('database_creation.php');
+
+if($_POST)
+{
+if($_POST['action']=="Login")
+{
+// Fetching email and password from the form
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM registration WHERE email = '$email' and pass = '$password'";
+    $result = mysqli_query($conn,$sql);
+    if(mysqli_num_rows($result) > 0){
+        // assign the session
+        $_SESSION['username'] =$email ;
+        // Redirecting the user to the homepage
+        header("Location: ../Internal/home.php");
+        
+    }else{
+        header('location: ../Internal/login.php');
+    }
+}
+if($_POST['action']=="Signup")
+{
     $email = $_POST['email'];
     $sql = "SELECT * FROM registration WHERE email ='$email'";
     $result = mysqli_query($conn, $sql);
@@ -38,9 +58,19 @@ if ($_SERVER['REQUEST_METHOD']) {
             var_dump($result);
         } else {
             // Redirect to home.html after successful registration
-            header('Location: ../Internal/home.html');
+            header('Location: ../Internal/login.php');
             exit;
         }
     }
+
 }
+
+if($_POST['action']=="Logout"){    
+    unset($_SESSION["username"]);    
+    header('location:../Internal/login.php');
+}
+
+}
+
+
 ?>
