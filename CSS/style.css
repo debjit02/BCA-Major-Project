@@ -1,9 +1,16 @@
 body {
-    background: linear-gradient(to right,
-            #78a7ba 0%,
-            #385d6c 50%,
-            #78a7ba 99%);
+    /* background-color: rgb(164, 213, 212); */
+    /* background-image: url('../Images/Assets/background.jpg');*/
+     background-image: url('../Images/Assets/bg.jpg');
+    background-size: cover;
+    background-position:center;
+    height: 60rem;
 }
+#registration-form
+{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
 
 .signup-form {
     font-family: sans-serif;
@@ -24,7 +31,7 @@ body {
 
 
 .form-header {
-    background-color: #eff0f1;
+    /* background-color: #eff0f1; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -38,8 +45,13 @@ body {
 }
 
 .form-body {
+   
+    display: flex;
+    flex-direction: column;
+    /* background-image: url('../Images/Assets/doctor-leading-medical-blurry-hospital-background-133236824.jpg'); */
     padding: 10px 40px;
     color: #666;
+    opacity: 1;
 }
 
 .form-group {
@@ -87,7 +99,7 @@ input[type="file"] {
 #range-label {
     width: 15%;
     padding: 5px;
-    background-color: #1bba93;
+    /* background-color: #1bba93; */
     color: white;
     border-radius: 5px;
     font-size: 17px;
@@ -100,7 +112,7 @@ input[type="file"] {
 }
 
 .signup-form .form-footer {
-    background-color: #eff0f1;
+    /* background-color: #eff0f1; */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 10px 40px;
@@ -120,7 +132,7 @@ input[type="file"] {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #1bba93;
+    background-color: #1b3bba;
     font-size: 17px;
     border: none;
     border-radius: 5px;
@@ -140,11 +152,11 @@ input[type="file"] {
 }
 .form-footer button a:hover
 {
-    background-color: #169c7b;
+    background-color: 6fc1e1;
     color: white;
 }
 
 .btn:hover {
-    background-color: #169c7b;
+    background-color: #6fc1e1;
     color: white;
 }

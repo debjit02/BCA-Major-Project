@@ -1,5 +1,6 @@
 
 nav {
+  /* position:sticky; */
   background-color: #007bff;
   color: #fff;
   display: flex;
@@ -9,6 +10,7 @@ nav {
   font-size: 20px;
   height: 5vh;
 }
+
 
 nav ul {
   list-style: none;

@@ -6,7 +6,7 @@ session_start();
 
 if($_POST)
 {
-if($_POST['action']=="Login")
+if(isset($_POST['action']) && $_POST['action']=="Login")
 {
 // Fetching email and password from the form
     $email = $_POST['email'];
@@ -24,7 +24,7 @@ if($_POST['action']=="Login")
         header('location: ../Internal/login.php');
     }
 }
-if($_POST['action']=="Signup")
+if(isset($_POST['action']) && $_POST['action']=="Signup")
 {
     $email = $_POST['email'];
     $sql = "SELECT * FROM registration WHERE email ='$email'";
@@ -65,7 +65,7 @@ if($_POST['action']=="Signup")
 
 }
 
-if($_POST['action']=="Logout"){    
+if(isset($_POST['action']) && $_POST['action']=="Logout"){    
     unset($_SESSION["username"]);    
     header('location:../Internal/login.php');
 }

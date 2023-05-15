@@ -39,7 +39,7 @@ if($_SESSION){
                     required="required" />
 
                 <div class="form-footer">
-                    <button type="submit" value="Login" class="btn" name="action"> Log In</button>
+                    <button type="submit" value="Login" class="btn" name="action">Log In</button>
                     <button class="btn" style="float: left;"><a href="../index.html">Sign up</a></button>
 
                 </div>

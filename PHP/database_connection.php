@@ -1,4 +1,5 @@
 <?php
+
 //create variables to store the value of host, user, password and port number
 $host = "localhost";
 $user = "root";

@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/nav.css">
-</head>
+  </head>
 
 <body>
 
-  <nav id="nav-bar">
+  <nav>
     <div id="nav-container">
       <ul>
         <li><a href="#">Home</a></li>
@@ -20,12 +20,16 @@
           ?> href="appointment.php" <?php
         } else {
           ?>
-              href="./Internal/login.html" <?php
+              href="./Internal/login.php" <?php
 
         }
         ?>>Book an appointment</a></li>
 
-
+<li>
+<form action="../PHP/operation.php" method="post">
+        <button class="btn " type="submit" name="action" value="Logout" style="position:absolute;" >Logout</button>
+      </form>
+</li>
 
 
       </ul>
