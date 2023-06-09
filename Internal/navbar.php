@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/nav.css">
-  </head>
+</head>
 
 <body>
 
   <nav>
-    <div id="nav-container">
+    <img src="../Images/Assets/logo.png" alt="">
+    <div class="nav-container">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
@@ -24,18 +25,27 @@
 
         }
         ?>>Book an appointment</a></li>
-
-<li>
-<form action="../PHP/operation.php" method="post">
-        <button class="btn " type="submit" name="action" value="Logout" style="position:absolute;" >Logout</button>
-      </form>
-</li>
-
+        <li><a href="">Contact Us</a></li>
 
       </ul>
       <?php
 
       ?>
+    </div>
+    <div class="button">
+      <form action="../PHP/operation.php" method="post">
+        <button class="btn " type="submit" name="action" value="Logout">Logout</button>
+
+        <!-- View profile dropdown -->
+        <!-- <label for="profile">Your Profile</label>
+
+        <select name="cars" id="profile">
+          <option value="volvo"></option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select> -->
+      </form>
     </div>
   </nav>
 </body>

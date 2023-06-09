@@ -1,22 +1,34 @@
-
 nav {
-  /* position:sticky; */
   background-color: #007bff;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  /* Aligns items to the left and right corners */
   align-items: center;
   padding-top: 10px;
   font-size: 20px;
   height: 5vh;
 }
 
+/* .nav-container {
+  display: flex;
+  align-items: center;
+} */
+
+nav img {
+  margin-right: 10px;
+  margin-left: 2px;
+  height: 45px;
+  width: auto;
+}
 
 nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 nav li {
@@ -39,7 +51,6 @@ nav a {
   transition: background-color 0.2s;
 }
 
-
 nav a:hover {
   background-color: #fff;
   color: #007bff;
@@ -50,5 +61,28 @@ nav a.active {
   color: #007bff;
 }
 
+nav button.btn {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
 
+nav button.btn:hover {
+  background-color: #0056b3;
+}
 
+nav button.btn:focus {
+  outline: none;
+}
+
+nav button.btn:active {
+  background-color: #003e80;
+}
