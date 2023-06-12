@@ -7,106 +7,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
   <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="shortcut icon" href="./Images/Logos/logo.ico" type="image/x-icon">
   <script src="Js/Script.js"></script>
 </head>
 
 <body>
   <div class="form-parent">
 
-  
-  <form class="signup-form" action="./PHP/operation.php" id="registration-form" method="post"
-    enctype="multipart/form-data">
-    <!-- form header -->
-    <div class="form-header">
-      <a href="#">
-        <h1>LifeCare Multispeciality Hospital</h1>
-      </a>
-      
-    </div>
 
+    <form class="signup-form" action="./PHP/operation.php" id="registration-form" method="post"
+      enctype="multipart/form-data">
+      <!-- form header -->
+      <div class="form-header">
+        <a href="#">
+          <h1>LifeCare Multispeciality Hospital</h1>
+        </a>
 
-    <!-- form body -->
-    <div class="form-body">
-      <!-- Firstname and Lastname -->
-      <div class="horizontal-group">
-        <div class="form-group left">
-          <label for="firstname" class="label-title">First name *</label>
-          <input type="text" id="firstname" class="form-input" name="firstname" placeholder="enter your first name"
-            required="required" />
-        </div>
-        <div class="form-group right">
-          <label for="lastname" class="label-title">Last name</label>
-          <input type="text" id="lastname" class="form-input" name="lastname" placeholder="enter your last name" />
-        </div>
-      </div>
-
-      <!-- Email -->
-      <div class="form-group">
-        <label for="email" class="label-title">Email*</label>
-        <input type="email" id="email" class="form-input" name="email" placeholder="enter your email"
-          required="required" />
-      </div>
-      <div class="form-group">
-        <label for="phone" class="label-title">Phone*</label>
-        <input type="tel" id="phone" class="form-input" value="+91" name="phone" placeholder="enter your Phone number"
-          required="required" />
-      </div>
-
-      <!-- Passwrod and confirm password -->
-      <div class="horizontal-group">
-        <div class="form-group left">
-          <label for="password" class="label-title">Password *</label>
-          <input type="password" id="password" name="password" class="form-input" placeholder="enter your password"
-            required="required" />
-        </div>
-        <div class="form-group right">
-          <label for="confirm-password" class="label-title">Confirm Password *</label>
-          <input type="password" class="form-input" id="confirm-password" placeholder="enter your password again"
-            required="required" oninput="checkPasswordMatch()" />
-          <div id="password-match-error" style="display:none; color:red;">Passwords do not match.</div>
-        </div>
       </div>
 
 
-      <!-- Gender and Hobbies -->
-      <div class="horizontal-group">
-        <div class="form-group left">
-          <label class="label-title">Gender:</label>
-          <div class="input-group">
-            <label for="male"><input type="radio" name="gender" value="male" id="male" />
-              Male</label>
-
-            <label for="female"><input type="radio" name="gender" value="female" id="female" />
-              Female</label>
-
+      <!-- form body -->
+      <div class="form-body">
+        <!-- Firstname and Lastname -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First name *</label>
+            <input type="text" id="firstname" class="form-input" name="firstname" placeholder="enter your first name"
+              required="required" />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last name</label>
+            <input type="text" id="lastname" class="form-input" name="lastname" placeholder="enter your last name" />
           </div>
         </div>
-      
 
-      <!-- Age -->
-      
-        <div class="form-group right">
-          <label for="experience" class="label-title">Age</label>
-          <input type="number" min="18" max="80" class="form-input" />
-        </div>
-      </div>
-
-      <div class="horizontal-group">
+        <!-- Email -->
         <div class="form-group">
-          <label for="address" class="label-title">Address</label>
-          <input type="text" name="address" id="address" placeholder="Enter your address here" class="form-input">
+          <label for="email" class="label-title">Email*</label>
+          <input type="email" id="email" class="form-input" name="email" placeholder="enter your email"
+            required="required" />
+        </div>
+        <div class="form-group">
+          <label for="phone" class="label-title">Phone*</label>
+          <input type="tel" id="phone" class="form-input" value="+91" name="phone" placeholder="enter your Phone number"
+            required="required" />
+        </div>
+
+        <!-- Passwrod and confirm password -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password" id="password" name="password" class="form-input" placeholder="enter your password"
+              required="required" />
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">Confirm Password *</label>
+            <input type="password" class="form-input" id="confirm-password" placeholder="enter your password again"
+              required="required" oninput="checkPasswordMatch()" />
+            <div id="password-match-error" style="display:none; color:red;">Passwords do not match.</div>
+          </div>
+        </div>
+
+
+        <!-- Gender and Hobbies -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Gender:</label>
+            <div class="input-group">
+              <label for="male"><input type="radio" name="gender" value="male" id="male" />
+                Male</label>
+
+              <label for="female"><input type="radio" name="gender" value="female" id="female" />
+                Female</label>
+
+            </div>
+          </div>
+
+
+          <!-- Age -->
+
+          <div class="form-group right">
+            <label for="experience" class="label-title">Age</label>
+            <input type="number" min="18" max="80" class="form-input" />
+          </div>
+        </div>
+
+        <div class="horizontal-group">
+          <div class="form-group">
+            <label for="address" class="label-title">Address</label>
+            <input type="text" name="address" id="address" placeholder="Enter your address here" class="form-input">
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- form-footer -->
-    <div class="form-footer" >
-      <button class="btn" style="float: left;"> <a href="./Internal/login.php">Login</a></button>
-      <input type="submit" class="btn" value="Signup" name="action"></input>
-      
-    </div>
-  </form>
-</div>
+      <!-- form-footer -->
+      <div class="form-footer">
+        <button class="btn" style="float: left;"> <a href="./Internal/login.php">Login</a></button>
+        <input type="submit" class="btn" value="Signup" name="action"></input>
+
+      </div>
+    </form>
+  </div>
 
 </body>
 

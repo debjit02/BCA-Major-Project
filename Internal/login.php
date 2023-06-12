@@ -13,14 +13,15 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../Images/Logos/logo.ico" type="image/x-icon">
 
 </head>
 
 <body>
-<?php 
-if($_SESSION){
-  session_destroy();
- } ?>
+    <?php
+    if ($_SESSION) {
+        session_destroy();
+    } ?>
     <form action="../PHP/operation.php" class="signup-form" method="post">
         <div class="form-header">
             <a href="#">

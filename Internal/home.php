@@ -18,6 +18,7 @@ session_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script src="../JS/Script.js"></script>
 </head>
 <?php
 if ($_SESSION) {
@@ -28,7 +29,7 @@ if ($_SESSION) {
     <?php
     include('navbar.php');
     ?>
-    <main>
+    <main id="home">
       <div class="main-body" id="body-cont-one">
         <img src="../Images/Assets/doctor.jpg" alt="Failed to load image">
 
@@ -39,16 +40,29 @@ if ($_SESSION) {
           autem recusandae quibusdam doloribus cupiditate aliquid rem vel deleniti? Perspiciatis nobis ipsa asperiores
           culpa officia quibusdam reprehenderit.</p>
       </div>
-     
+
 
       <!-- Appointment Booking Button -->
       <div class="appointment" id="appoint-booking">
-        <button class="btn">Book appointment</button>
-        <button class="btn">Revisit Checkup </button>
-    
-   </div>
+        <button id="appointment" class="btn">Book appointment</button>
+        <button id="revisit" class="btn">View Appointments </button>
 
-      
+        <script>
+          // Redirecting the user to the appointment booking page...
+          const appointmentredirect = document.getElementById('appointment');
+          function redirectToPage() {
+            window.location.href = 'appointment.php';
+          }
+
+          appointmentredirect.addEventListener('click', redirectToPage);
+
+
+
+        </script>
+
+      </div>
+
+
       <!-- About Us -->
       <div id="about">
         <h2>About Us</h2>
@@ -84,6 +98,93 @@ if ($_SESSION) {
         </p>
       </div>
 
+
+
+      <!-- Our Services -->
+
+      <div class="services" id="services">
+
+      </div>
+
+      <!-- Doctors Names -->
+      <div class="doctorsnames" id="doctorsnames">
+        <h2>Our Doctors</h2>
+        <div class="doct-container">
+          <div class="doctor">
+            <img src="../Images/Doctors/pic.png" alt="">
+            <div class="doctor-details">
+              <p>Doctor Name: Dr. Debjit Verma</p>
+              <p>Specialization: Physician</p>
+              <p>Contact: 1234567890</p>
+            </div>
+          </div>
+          <div class="doctor">
+            <img src="../Images/Doctors/pic.png" alt="">
+            <div class="doctor-details">
+              <p>Doctor Name: Dr. Preeti Sharma</p>
+              <p>Specialization: Physician</p>
+              <p>Contact: 1234567890</p>
+            </div>
+          </div>
+        </div>
+        <div class="doct-container">
+          <div class="doctor">
+            <img src="../Images/Doctors/pic.png" alt="">
+            <div class="doctor-details">
+              <p>Doctor Name: Ahana Ganguly</p>
+              <p>Specialization: Physician</p>
+              <p>Contact: 1234567890</p>
+            </div>
+          </div>
+          <div class="doctor">
+            <img src="../Images/Doctors/pic.png" alt="">
+            <div class="doctor-details">
+              <p>Doctor Name: Dr. Atanu Kumar Das</p>
+              <p>Specialization: Cardiology</p>
+              <p>Contact: 1234567890</p>
+            </div>
+          </div>
+        </div>
+        <div class="doct-container">
+          <div class="doctor">
+            <img src="../Images/Doctors/pic.png" alt="">
+            <div class="doctor-details">
+              <p>Doctor Name:Dr. Subodh Banerjee</p>
+              <p>Specialization: Cardiology</p>
+              <p>Contact: 1234567890</p>
+            </div>
+          </div>
+          <div class="doctor">
+            <img src="../Images/Doctors/pic.png" alt="">
+            <div class="doctor-details">
+              <p>Doctor Name: Dr. Ankita Saha</p>
+              <p>Specialization: Cardiology</p>
+              <p>Contact: 1234567890</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services -->
+
+      <div class="services" id="services">
+
+        <h2>Explore our Centres of Clinical Excellence</h2>
+
+        <div class="service-modules">
+
+          <div class="service-child">
+            <img src="../Images/Ico/bone.png" alt="">
+            <h3>Orthopedic surgeries</h3>
+          </div>
+
+          
+
+        </div>
+
+
+      </div>
+
     </main>
     <footer>
       <div class="parent left">
@@ -95,6 +196,7 @@ if ($_SESSION) {
         <span>&copy; 2023 LifeCare Multispeciality Hospital. All rights reserved</span>
       </div>
       <div class="parent right">
+        <h3>Quick Links</h3>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>

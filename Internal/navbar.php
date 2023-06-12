@@ -11,7 +11,7 @@
 <body>
 
   <nav>
-    <img src="../Images/Assets/logo.png" alt="">
+    <img src="../Images/Logos/logo.png" alt="">
     <div class="nav-container">
       <ul>
         <li><a href="#">Home</a></li>
@@ -36,23 +36,13 @@
       <form action="../PHP/operation.php" method="post">
         <button class="btn " type="submit" name="action" value="Logout">Logout</button>
 
-        <!-- View profile dropdown -->
-        <!-- <label for="profile">Your Profile</label>
-
-        <select name="cars" id="profile">
-          <option value="volvo"></option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select> -->
+        
       </form>
     </div>
   </nav>
 </body>
 <footer>
-  <?php
-  // include('socials_bars.html');
-  ?>
+  
 </footer>
 
 </html>

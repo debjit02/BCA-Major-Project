@@ -1,5 +1,7 @@
 nav {
-  background-color: #007bff;
+  position: sticky;
+  top: 0;
+  background-color: #2b8700;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -8,6 +10,7 @@ nav {
   padding-top: 10px;
   font-size: 20px;
   height: 5vh;
+  z-index: 100; 
 }
 
 /* .nav-container {
@@ -53,12 +56,12 @@ nav a {
 
 nav a:hover {
   background-color: #fff;
-  color: #007bff;
+  color: #2b8700;
 }
 
 nav a.active {
   background-color: #fff;
-  color: #007bff;
+  color: #2b8700;
 }
 
 nav button.btn {
@@ -67,7 +70,7 @@ nav button.btn {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #2b8700;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -76,7 +79,8 @@ nav button.btn {
 }
 
 nav button.btn:hover {
-  background-color: #0056b3;
+  background-color: #fff;
+  color: #2b8700;
 }
 
 nav button.btn:focus {
@@ -84,5 +88,5 @@ nav button.btn:focus {
 }
 
 nav button.btn:active {
-  background-color: #003e80;
+  background-color: #2b8700;
 }
