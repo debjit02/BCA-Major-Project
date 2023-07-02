@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2023 at 06:09 PM
+-- Generation Time: Jul 02, 2023 at 07:33 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `appointment` (
   `name` varchar(50) NOT NULL,
-  `email` varchar(20) NOT NULL,
+  `email` varchar(200) NOT NULL,
   `phone` int(30) NOT NULL,
   `dob` date NOT NULL,
   `appdate` date NOT NULL,
@@ -41,9 +41,7 @@ CREATE TABLE `appointment` (
 --
 
 INSERT INTO `appointment` (`name`, `email`, `phone`, `dob`, `appdate`, `dept`) VALUES
-('Subodh Adhikari', 'subodhadhikari1911@h', 2147483647, '2001-11-12', '2023-06-12', 'Neurology'),
-('Subodh Adhikari', 'subodhadhikari929@gm', 2147483647, '2001-11-12', '2023-06-12', 'Cardiology'),
-('Subodh Adhikari', 'subodhadhikari929@gm', 2147483647, '2001-11-12', '2023-06-12', 'Physician');
+('Subodh Sharma', 'subodhadhikari929@gmail.com', 2147483647, '2000-02-12', '2023-07-22', 'Cardiology');
 
 -- --------------------------------------------------------
 
