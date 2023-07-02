@@ -45,7 +45,7 @@ if ($_SESSION) {
       <!-- Appointment Booking Button -->
       <div class="appointment" id="appoint-booking">
         <button id="appointment" class="btn">Book appointment</button>
-        <button id="revisit" class="btn">View Appointments </button>
+        <button id="viewAppointments" class="btn">View Appointments </button>
 
         <script>
           // Redirecting the user to the appointment booking page...
@@ -55,6 +55,17 @@ if ($_SESSION) {
           }
 
           appointmentredirect.addEventListener('click', redirectToPage);
+
+
+
+
+          // Redirecting the user to the view booked appointment 
+          const viewAppointments = document.getElementById('viewAppointments');
+          function viewAppointmentsredirect() {
+            window.location.href = 'viewAppointments.php';
+          }
+
+          viewAppointments.addEventListener('click', viewAppointmentsredirect);
 
 
 
@@ -167,7 +178,7 @@ if ($_SESSION) {
 
       <!-- Services -->
 
-      <div class="services" id="services">
+      <!-- <div class="services" id="services">
 
         <h2>Explore our Centres of Clinical Excellence</h2>
 
@@ -178,12 +189,12 @@ if ($_SESSION) {
             <h3>Orthopedic surgeries</h3>
           </div>
 
-          
+
 
         </div>
 
 
-      </div>
+      </div> -->
 
     </main>
     <footer>

@@ -100,5 +100,36 @@ if ($_POST) {
         $conn->close();
     }
 }
+if (isset($_POST['action']) && $_POST['action'] == "update") {
+
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $dob = $_POST['dob'];
+    $appdate = $_POST['appdate'];
+    $sql = "UPDATE appointment SET name = '$name', phone = '$phone', dob = '$dob', appdate = '$appdate' WHERE email = '" . $_SESSION['username'] . "'";
+
+    
+    $result = mysqli_query($conn, $sql);
+    if (!$result) {
+        var_dump($result);
+    } else {
+        // Redirect to home.html after successful registration
+        header('Location: ../Internal/home.php');
+        exit;
+    }
+
+}
+if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['action'] == "cancel")
+{
+    $sql = "DELETE FROM `appointment` WHERE email = '" . $_SESSION['username'] . "'";
+    $result = mysqli_query($conn, $sql);
+    if (!$result) {
+        var_dump($result);
+    } else {
+        // Redirect to home.html after successful registration
+        header('Location: ../Internal/home.php');
+        exit;
+    }
+}
 
 ?>
