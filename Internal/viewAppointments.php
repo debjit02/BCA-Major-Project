@@ -23,7 +23,7 @@ session_start();
 <body>
     <h1>
         <?php echo "Hi " . $_SESSION['username'];
-        echo "! Here are your Apoinements" ?>
+        echo "! Here are your Appointments" ?>
     </h1>
 
 
